@@ -1,20 +1,13 @@
-const drop = document.querySelector("#drop");
-const dropDown = document.querySelector(".drop-down");
+const bars = document.querySelector("#bars");
+const nav = document.querySelector(".nav-list");
+const navItems = document.querySelectorAll(".nav-list ul li");
 
+bars.addEventListener("click",()=>{
+    nav.classList.toggle("active");
+})
 
-// drop.addEventListener("mouseover",()=>{
-//     dropDown.classList.add("show")
-//     console.log("drop");
-// })
-// drop.addEventListener("mouseleave",()=>{
-//     setTimeout(()=>{
-//         dropDown.classList.remove("show")
-//     },1000)
-//     console.log("drop");
-// })
-// dropDown.addEventListener("mouseover",()=>{
-//     dropDown.classList.add("show")
-//     console.log("drop");
-// })
-
-// console.log(drop,dropDown);
+navItems.forEach(item =>{
+    item.addEventListener("click",()=>{
+        nav.classList.remove("active");
+    })
+})
