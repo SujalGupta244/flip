@@ -334,6 +334,7 @@ main{
 
     .left img{
         width: 10rem;
+        height: auto;
     }
 
     .right{
@@ -443,26 +444,6 @@ main{
         margin-right: 0.4rem;
     }
     
-    .form-control{
-        margin-right: 0.4rem;
-        box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0,0.3);
-    }
-
-    .form-control input{
-        padding: 0.2rem;
-        width: 10rem;
-    }
-    
-    .form-control button{
-        padding: 0.2rem;
-    }
-    
-    li > button{
-        padding: 0.2rem 1rem;
-        font-size: 0.9rem;
-    }
-    
-
 
     /* Main */
 
@@ -472,6 +453,10 @@ main{
 
     .main-cont h4{
         width: 80%;
+    }
+
+    .left img{
+        height: auto;
     }
 
     /* Footer */
